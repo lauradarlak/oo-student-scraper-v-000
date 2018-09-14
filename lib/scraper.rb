@@ -14,7 +14,7 @@ class Scraper
     html = File.read('fixtures/student-site/index.html')
     student_index = Nokogiri::HTML(html)
 
-
+    students = {}
 
     # Iterate through the students
     student_index.css("div.student-card").each do |student|
