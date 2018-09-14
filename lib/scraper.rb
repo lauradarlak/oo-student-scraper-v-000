@@ -5,6 +5,8 @@ require 'pry'
 class Scraper
 
   def self.scrape_index_page(index_url)
+    # Opens a file and reads it into a variable
+    html = File.read('fixtures/student-site/index.html')
 
   end
 
