@@ -45,10 +45,11 @@ class Scraper
         student_hash[:github] = social_att.attribute("href").value
       else
         student_hash[:blog] = social_att.attribute("href").value
+            binding.pry 
       end
 
     end
-    binding.pry
+
 
   end
 end
