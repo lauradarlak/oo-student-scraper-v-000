@@ -48,7 +48,7 @@ class Scraper
 
       end
 
-    student_hash[:profile_quote] = student_profile.css("div.profile-quote").text
+    student_hash[:profile_quote] = student_profile.css("div.profile-quote").text.strip
       binding.pry
     end
 
