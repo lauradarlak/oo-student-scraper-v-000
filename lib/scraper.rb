@@ -14,15 +14,15 @@ class Scraper
     html = File.read('fixtures/student-site/index.html')
     student_index = Nokogiri::HTML(html)
 
-
+    students = []
 
     # Iterate through the students
     student_index.css("div.student-card").each do |student|
-      students = [
+      students << {
         :name => student.css("h4.student-name").text,
         :location => student.css("p.student-location").text,
         :profile_url => student.css("a").attribute("href").value
-      ]
+      }
 
     end
 
