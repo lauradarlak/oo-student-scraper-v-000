@@ -45,9 +45,11 @@ class Scraper
         student_hash[:github] = social_att.attribute("href").value
       else
         student_hash[:blog] = social_att.attribute("href").value
-            binding.pry
+
       end
 
+      student_hash[:profile_quote] = student_profile.css("div.profile-quote").text
+      binding.pry
     end
 
 
