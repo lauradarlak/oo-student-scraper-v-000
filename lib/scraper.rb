@@ -10,7 +10,7 @@ class Scraper
 
     student_index = Nokogiri::HTML(html)
 
-    students = {}
+    # students = {}
 
     # Iterate through the students
 
