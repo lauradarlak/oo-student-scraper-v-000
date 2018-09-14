@@ -4,7 +4,15 @@ class Student
 
   @@all = []
 
+  attr_accessor :name, :user_name, :age, :location, :bio
+
+  def initialize(attributes)
+    attributes.each {|key, value| self.send(("#{key}="), value)}
+  end
+end
+
   def initialize(student_hash)
+    student_hash.each {|key, value| self.send(("#{key}="), value)}
 
   end
 
