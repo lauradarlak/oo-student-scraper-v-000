@@ -51,5 +51,4 @@ class Scraper
     binding.pry
 
   end
-self.scrape_profile_page(profile_url)
 end
