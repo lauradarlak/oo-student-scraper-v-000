@@ -23,8 +23,9 @@ class Scraper
         :location => student.css("p.student-location").text,
         :profile_url => ("a").attribute["href"]
       }
-      binding.pry
+
     end
+    binding.pry
     students
 
 
