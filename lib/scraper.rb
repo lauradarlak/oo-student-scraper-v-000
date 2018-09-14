@@ -47,7 +47,7 @@ class Scraper
         student_hash[:blog] = social_att.attribute("href").value
       end
     end
-
+binding.pry
 
   end
 
