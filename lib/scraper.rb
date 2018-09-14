@@ -24,7 +24,7 @@ class Scraper
         :profile_url => student.css("a").attribute("href").value
       }
     end
-
+binding.pry
     students
 
   end
