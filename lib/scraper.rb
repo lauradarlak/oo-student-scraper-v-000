@@ -18,11 +18,11 @@ class Scraper
 
   end
 
-  
+
 
   def self.scrape_profile_page(profile_url)
 
   end
 
 end
-self.scrape_index_page(index_url)
+scrape_index_page
